@@ -93,6 +93,86 @@
 
 //Object.keys(JSONObject)
 
-var JSONObject = { "key": 1 };
-var keyArray = Object.keys(JSONObject);
-console.log(keyArray);
+// var JSONObject = { "key": 1 };
+// var keyArray = Object.keys(JSONObject);
+// console.log(keyArray);
+
+// const a = 123;
+// let b = 123;
+// a = 456;
+// b = 456;
+
+// const name = 'Andy';
+// //ES5寫法
+// var str5 = 'Hello' + name + "!";
+
+// //ES6寫法
+// const str6 = `Hello ${name}`;
+
+// //ES5寫法
+// var html5 = "<div>";
+// html5 += "<p>Hello World</p>";
+// html5 += "</div>";
+
+// //ES6寫法
+// const html6 = `
+//   <div>
+//     <p>Hello World</p>
+//   </div>  
+// `;
+
+//ES5寫法
+// var arr = [1, 2, 3];
+// var obj = { d: 1, e: 2, f: 3 };
+// var a = arr[0],
+//     b = arr[1],
+//     c = arr[2];
+// var d = obj.d,
+//     e = obj.e,
+//     f = obj.f;
+// console.log(a, b, c);
+// console.log(d, e, f);
+
+
+//ES6寫法
+// const arr = [1, 2, 3];
+// const obj = { d: 1, e: 2, f: 3 };
+// const [a, b, c] = arr; // a = arr[0], b = arr[1], c = arr[2]
+// const { d, e, f } = obj;// d = obj.d, e = obj.e, f = obj.f
+// console.log(a, b, c);    // 1 2 3
+// console.log(d, e, f);    // 1 2 3
+
+// //ES5寫法
+// var name = 'Andy';
+// var obj = {
+//     name: name
+// };
+
+//ES6寫法
+// const name = 'Andy';
+// const obj = { name };
+// console.log(obj.name);
+
+//ES5寫法
+// var arr = [1, 2, 3];
+// var marr = arr.map(function (element) {
+//     return element * 2;
+// });
+// console.log(marr);
+//ES6寫法
+// const arr=[1,2,3];
+// const mapArr=arr.map(element=>element*2);
+// console.log(mapArr);
+
+class square {
+    constructor(width, height) {
+        this.width = width;
+        this.height = height;
+    }
+    calcArea() {
+        return this.width * this.height;
+    }
+}
+const square1 = new square(10, 10);
+const area = square1.calcArea();
+console.log(area);
